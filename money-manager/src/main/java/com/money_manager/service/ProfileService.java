@@ -31,7 +31,7 @@ public class ProfileService {
 
     private final JwtUtil jwtUtil;
 
-    @Value("${app.activation.url}")
+    @Value("${MONEY_MANAGER_BACKEND_URL:http://localhost:8080}")
     private String activationUrl;
 
     public ProfileDto registerProfile(ProfileDto profileDto){

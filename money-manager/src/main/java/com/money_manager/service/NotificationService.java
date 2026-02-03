@@ -21,7 +21,7 @@ public class NotificationService {
     private final EmailService emailService;
     private final ExpenseService expenseService;
 
-    @Value("${money.manager.frontend.url}")
+    @Value("${MONEY_MANAGER_FRONTEND_URL}")
     private String frontendUrl;
 
     @Scheduled(cron = "0 0 22 * * *",zone = "IST")
